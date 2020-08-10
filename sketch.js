@@ -4,7 +4,8 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var ground,paper,dustbin;
+var ground,paper,dustbin
+;
 
 function setup() 
 {
@@ -13,9 +14,9 @@ function setup()
 	engine = Engine.create();
 	world = engine.world;
 	//Create the Bodies Here.
-	ground = new Ground(400,350,700,20);
+	ground = new Ground(400,600,800,20);
 	paper = new Paper(200,200,50);
-	dustbin = new Dustbin(300,300,100,100);
+	dustbin = new Dustbin(500,700,100,100);
 	Engine.run(engine);
 }
 

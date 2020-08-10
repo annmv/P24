@@ -4,7 +4,6 @@ class Dustbin
     {
         var options = 
         {
-        isStatic: false,
 		restitution: 0.3,
 		friction: 1,
 		density:1
@@ -17,10 +16,7 @@ class Dustbin
     display()
     {
         push();
-        translate(this.body.x,this.body.y);
-        rotate(this.angle);
         rectMode(CENTER);
         rect(0,0,this.width,this.height);
-        pop();
     }
 }

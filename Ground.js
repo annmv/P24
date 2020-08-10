@@ -4,8 +4,7 @@ class Ground
     {
         var options = 
         {
-            isStatic: false,
-            density:1
+            isStatic:true
         }
     this.body = Bodies.rectangle(x,y,w,h,options);
     this.width = w;
@@ -15,6 +14,7 @@ class Ground
     display()
     {
         rectMode(CENTER);
-        rect(this.body.position.x,this.body.position.y,this.width,this.height);   
+        rect(this.body.position.x,this.body.position.y,this.width,this.height); 
+        fill("purple");  
     }
 }

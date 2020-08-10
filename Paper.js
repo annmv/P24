@@ -4,7 +4,6 @@ class Paper
     {
         var options =
         {
-        isStatic: false,
 		restitution: 0.3,
 		friction: 0.5,
 		density:1.2
@@ -16,9 +15,10 @@ class Paper
     display()
     {
         push();
+        fill("blue");
         translate(this.body.position.x,this.body.position.y);
         rotate(this.body.angle);
-        ellipseMode(x,y,r);
+        ellipseMode(RADIUS);
         ellipse(0,0,this.radius);
         pop();
     }
